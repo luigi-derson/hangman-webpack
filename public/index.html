@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+
+  <div>
+    <h2>Guess the word</h2>
+    <div id="display-puzzle" class="puzzle"></div>
+    <div class="word-list">
+      <p>Guessed characters:</p>
+      <p id="guesses" class="guesses"></p>
+    </div>
+    <p id="status-message" class="status-message"></p>
+    <button id="reset" class="button">Reset game</button>
+    <select name="words" id="num-words" class="button">
+      <option disabled selected value="0">Number of words</option>
+      <option value="1">One word</option>
+      <option value="2">Two words</option>
+      <option value="3">Three words</option>
+    </select>
+  </div>
+
+  <script src="/scripts/bundle.js"></script>
+</body>
+</html>
+
